@@ -59,16 +59,37 @@ const MainTab = () => {
 }
 
 function ContactForm ({ onClose }) {
-    const [formData, setFormData] = useState({ name: '', email: '', message: '', number: '' })
+    const [formData, setFormData] = useState({ Name: '', Email: '', Message: '', Number: '' })
 
     const handleChange = (event) => {
         const { name, value } = event.target
         setFormData((prevFormData) => ({ ...prevFormData, [name]: value }))
     }
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault()
-        alert(`Name: ${formData.name}, Email: ${formData.email}, Message: ${formData.message}, Number: ${formData.number}`)
+        try {
+            const response = await fetch('http://localhost:8000/api/users', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+
+            if (response.ok) {
+                const result = await response.json()
+                console.log('User data submitted successfully:', result)
+                alert('User data submitted successfully')
+                onClose() // Close the modal after submission
+            } else {
+                console.error('Failed to submit user data:', response.statusText)
+                alert('Failed to submit user data. Please try again.')
+            }
+        } catch (error) {
+            console.error('Error submitting user data:', error.message)
+            alert('Error submitting user data. Please try again.')
+        }
         onClose() // Close the modal after submission
     }
 
@@ -84,8 +105,8 @@ function ContactForm ({ onClose }) {
                 fullWidth
                 margin="normal"
                 id="name"
-                name="name"
-                value={formData.name}
+                name="Name"
+                value={formData.Name}
                 onChange={handleChange}
             />
 
@@ -95,9 +116,9 @@ function ContactForm ({ onClose }) {
                 fullWidth
                 margin="normal"
                 id="email"
-                name="email"
+                name="Email"
                 type="email"
-                value={formData.email}
+                value={formData.Email}
                 onChange={handleChange}
             />
 
@@ -107,9 +128,9 @@ function ContactForm ({ onClose }) {
                 fullWidth
                 margin="normal"
                 id="phoneNumber"
-                name="phoneNumber"
+                name="Number"
                 type="tel"  // Set the type to "tel" for phone numbers
-                value={formData.phoneNumber}
+                value={formData.Number}
                 onChange={handleChange}
                 InputProps={{
                     inputMode: 'numeric',
@@ -126,8 +147,8 @@ function ContactForm ({ onClose }) {
                 rows={4}
                 margin="normal"
                 id="message"
-                name="message"
-                value={formData.message}
+                name="Message"
+                value={formData.Message}
                 onChange={handleChange}
             />
 
