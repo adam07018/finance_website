@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* app-container.css */
+
+.app-container {
+  background-color: #d2a172; /* Brownish color */
+  color: #ead586; /* Yellow color for text */
+  font-family: 'serif'; /* Old-fashioned font */
+}

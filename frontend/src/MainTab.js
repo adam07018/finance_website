@@ -37,15 +37,14 @@ const MainTab = () => {
                 className="custom-tabs-container"
             >
                 <Tab icon={<HomeIcon />} label="HomePage" className="custom-tab" />
+                <Tab icon={<PersonPinIcon />} label="About Us" className="custom-tab" />
                 <Tab
                     icon={<PersonAddIcon />}
                     label="Partnership & Collaboration"
                     className="custom-tab"
                     onClick={handleShowFormForPartnership} // Add onClick handler for this tab
                 />
-                <Tab icon={<HelpCenterIcon />} label="Q&A" className="custom-tab" />
-                <Tab icon={<PersonPinIcon />} label="About Us" className="custom-tab" />
-            </Tabs>
+                <Tab icon={<HelpCenterIcon />} label="Q&A" className="custom-tab" />            </Tabs>
 
 
             {/* Render ContactForm in a Dialog if showContactForm is true */}
