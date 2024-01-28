@@ -4,7 +4,7 @@ import HomeIcon from '@mui/icons-material/Home'
 import PersonAddIcon from '@mui/icons-material/PersonAdd'
 import HelpCenterIcon from '@mui/icons-material/HelpCenter'
 import PersonPinIcon from '@mui/icons-material/PersonPin'
-import './MainTab.css' // Import the custom CSS file
+import './MainTab.css'
 
 const MainTab = () => {
     const [value, setValue] = useState(0)
@@ -36,15 +36,19 @@ const MainTab = () => {
                 aria-label="icon label tabs example"
                 className="custom-tabs-container"
             >
-                <Tab icon={<HomeIcon />} label="HomePage" className="custom-tab" />
-                <Tab icon={<PersonPinIcon />} label="About Us" className="custom-tab" />
+                <Tab label="Home" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
+                <Tab label="About Us" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
+                <Tab label="Own A Franchaise" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
+                <Tab label="Carreer" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
+                <Tab label="Locations" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
+                <Tab label="News" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
+                <Tab label="Q&A" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
                 <Tab
-                    icon={<PersonAddIcon />}
-                    label="Partnership & Collaboration"
+                    label="Contact Us"
                     className="custom-tab"
+                    style={{ fontSize: '16px', fontWeight: 'bold' }}
                     onClick={handleShowFormForPartnership} // Add onClick handler for this tab
-                />
-                <Tab icon={<HelpCenterIcon />} label="Q&A" className="custom-tab" />            </Tabs>
+                />         </Tabs>
 
 
             {/* Render ContactForm in a Dialog if showContactForm is true */}

@@ -1,15 +1,16 @@
 /* MainTab.css */
 
 .custom-tabs-container {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
   padding: 5px; /* Adjust padding to control the space around the tabs */
   /* background-color: #f0f0f0; Add a background color for better visualization */
 }
 
 .custom-tab {
   flex: 1;
-  font-size: 16px;
-  padding: 12px 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  /* padding: 12px 20px; */
   /* Additional styling for the tabs */
 }
