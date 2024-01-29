@@ -7,6 +7,7 @@ import MainTab from './MainTab'
 import './css/app-container.css'
 import trademark from './images/trademark.jpeg'
 import ImageSlider from './ImageSlider'
+import Footer from './Footer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -15,6 +16,7 @@ root.render(
     <MainTab />
     <DowntownTitle />
     <ImageSlider />
+    <Footer />
   </div>
 );
 

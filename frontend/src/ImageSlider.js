@@ -8,16 +8,18 @@ import Slideshow_4 from './images/Slideshow_3.jpeg'
 const ImageSlider = () => {
     const [counter, setCounter] = useState(1)
 
+    let intervalId
+
+    const changeImage = (newCounter) => {
+        clearInterval(intervalId) // Clear existing interval
+        setCounter(() => newCounter) // Set the new counter value
+    }
+
     useEffect(() => {
-        const intervalId = setInterval(() => {
+        intervalId = setInterval(() => {
             document.getElementById('radio' + counter).checked = true
             setCounter((prevCounter) => (prevCounter % 4) + 1)
-        }, 8000)
-
-        const changeImage = (newCounter) => {
-            clearInterval(intervalId) // Clear existing interval
-            setCounter(newCounter) // Set the new counter value
-        }
+        }, 6000)
 
         return () => {
             clearInterval(intervalId)

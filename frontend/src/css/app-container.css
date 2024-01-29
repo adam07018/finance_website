@@ -5,4 +5,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #d2a172; /* Brownish color */
+  color: #ead586; /* Yellow color for text */
+  font-family: 'serif'; /* Old-fashioned font */
 }

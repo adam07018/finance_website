@@ -38,7 +38,7 @@ body {
 
 .navigation-manual {
   position: absolute;
-  width: 70%;
+  width: 37%;
   margin-top: -40px;
   display: flex;
   justify-content: center;
@@ -80,7 +80,7 @@ body {
 .navigation-auto {
   position: absolute;
   display: flex;
-  width: 70%;
+  width: 37%;
   justify-content: center;
   margin-top: 460px;
 }
