@@ -12,8 +12,8 @@ const TimelineComponent = () => {
 
             document.querySelectorAll('.item').forEach((item, i) => {
                 const rect = item.getBoundingClientRect()
-                const min = rect.top + viewportHeight * 0.6
-                const max = rect.bottom + viewportHeight * 0.5
+                const min = rect.top + viewportHeight * 0.82
+                const max = rect.bottom + viewportHeight * 0.63
 
                 if (window.scrollY >= min && window.scrollY <= max) {
                     index = i
