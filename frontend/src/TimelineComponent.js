@@ -55,8 +55,8 @@ const TimelineComponent = () => {
     return (
         <div className="shell" id="shell">
             <div className="header">
-                <h2 className="title">我们的故事</h2>
-                <h3 className="subtitle">才正要开始</h3>
+                <h2 className="title">Be our partner</h2>
+                <h3 className="subtitle">Join us today!</h3>
             </div>
             <div className="timeline">
                 <div class="item" data-text="001">
