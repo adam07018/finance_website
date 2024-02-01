@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './css/TimelineComponent.css'
+import timeline1 from './images/timeline1.jpeg'
+import timeline2 from './images/timeline2.jpeg'
 
 const TimelineComponent = () => {
     const [activeIndex, setActiveIndex] = useState(0)
@@ -61,7 +63,7 @@ const TimelineComponent = () => {
             <div className="timeline">
                 <div class="item" data-text="001">
                     <div class="content">
-                        <img src="./img/01.jpeg" alt="" class="img"></img>
+                        <img src={timeline1} alt="" class="img"></img>
                         <h2 class="content-title">Own a Franchise</h2>
                         <p class="content-desc">
                             如果你停止，就是谷底。如果你还在继续，
@@ -72,7 +74,7 @@ const TimelineComponent = () => {
 
                 <div class="item" data-text="001">
                     <div class="content">
-                        <img src="./img/02.jpg" alt="" class="img"></img>
+                        <img src={timeline2} alt="" class="img"></img>
                         <h2 class="content-title">Take a tour of our outlet</h2>
                         <p class="content-desc">
                             如果你停止，就是谷底。如果你还在继续，
