@@ -4,6 +4,9 @@ import Slideshow_1 from './images/trademark.jpeg'
 import Slideshow_2 from './images/Slideshow_1.jpeg'
 import Slideshow_3 from './images/Slideshow_2.jpeg'
 import Slideshow_4 from './images/Slideshow_3.jpeg'
+import news_1 from './images/news1.jpeg'
+import news_2 from './images/news2.jpeg'
+import news_3 from './images/news3.jpeg'
 
 const ImageSlider = () => {
     const [counter, setCounter] = useState(1)
@@ -37,13 +40,13 @@ const ImageSlider = () => {
                 {/* radio button end */}
                 {/* slide image start */}
                 <div className="slide first">
-                    <img src={Slideshow_1} alt="" />
+                    <img src={news_1} alt="" />
                 </div>
                 <div className="slide">
-                    <img src={Slideshow_2} alt="" />
+                    <img src={news_2} alt="" />
                 </div>
                 <div className="slide">
-                    <img src={Slideshow_3} alt="" />
+                    <img src={news_3} alt="" />
                 </div>
                 <div className="slide">
                     <img src={Slideshow_4} alt="" />

@@ -1,15 +1,19 @@
 .footer {
-  background: #2a6bc6;
-  color: #333;
+  background: #254246;
+  color: rgb(4, 205, 250);
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
   font-size: 14px;
 }
 
+.footer.footer {
+  padding: 20px 0;
+}
+
 .footer a {
-  color: #333;
+  color: rgb(29, 206, 35);
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 15px;
   font-size: large;
   font-weight: bold;
 }
@@ -21,6 +25,7 @@
 } */
 
 .footer .footer-bottom {
+  padding-top: 20px;
   font-weight: bold;
   font-size: x-large;
 }
