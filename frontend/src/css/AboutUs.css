@@ -16,9 +16,10 @@ body {
   font-weight: bold;
 }
 .about-1 p {
-  text-align: center;
+  /* text-align: center; */
   padding: 3px;
-  color: #fff;
+  color: black;
+  font-size: 20px;
 }
 .about-item {
   margin-bottom: 20px;

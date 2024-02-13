@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 
-import './css/AboutUs.module.css'
+import './css/AboutUs.css'
 import { textAlign } from '@mui/system'
 
 function AboutUs () {
@@ -9,7 +9,16 @@ function AboutUs () {
         <section id="about">
             <div className="about-1">
                 <h1 style={{ textAlign: "center", fontSize: "60px", fontWeight: "bold" }}>About Us</h1>
-                <p style={{ textAlign: "center", padding: "3px" }}>I am a software developer who is determined to teach as many people as possible how to code and learn general technological aspects of the current century. My approach towards it is that, I create a miniature version of already existing software that most people interact with in their daily lives. With these, am able to teach them how to make what they are already using. Your support is highly appreciated. Just modify this code to your preference</p>
+                <p style={{ padding: "3px" }}>It all started with the love of food!<br /><br />
+
+                    In the year 1942, the founder of Downtown, a charismatic young man, was approached with an opportunity to learn the art of cooking prawn noodle soup. Without hesitation, he embraced the chance!<br /><br />
+
+                    In just a month, he honed his skills under the guidance of his favorite uncle, who generously shared all his expertise in prawn noodle soup. The young man, already gifted in the culinary arts, quickly mastered the craft.<br /><br />
+
+                    Soon, his prawn noodle soup stall, situated at Far East (where Dinbulah is now), became renowned for serving the most delicious prawn noodles. The stall drew crowds daily, with hundreds of people lining up to savor the famous dish. During the busiest lunch hours, the stall achieved a remarkable feat by serving up to 800 bowls!<br /><br />
+
+                    He came from a humble background. That’s why he knows what it takes to start a business.  He wants to assist aspiring entrepreneurs in achieving greatness too in this food industry.<br /><br />
+                </p>
             </div>
             <div className="about-2">
                 <div className="content-box-large">
@@ -34,8 +43,8 @@ function AboutUs () {
                             <div className="col-md-4">
                                 <div className="about-item text-center">
                                     <i className="fa fa-book"></i>
-                                    <h3>ACHIEVEMENTS</h3>
-                                    <p>With these, am able to teach them how to make what they are already using. Your support is highly appreciated.</p>
+                                    <h3>Motto</h3>
+                                    <p>At Downtown we celebrate food! </p>
                                 </div>
                             </div>
                         </div>

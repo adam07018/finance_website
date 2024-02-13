@@ -7,19 +7,19 @@
   flex-direction: column; */
   background: radial-gradient(
       ellipse farthest-corner at right bottom,
-      #fedb37 0%,
-      #fdb931 8%,
-      #9f7928 30%,
-      #8a6e2f 40%,
+      #ffeb3b 0%,
+      #ffe082 8%,
+      #d4a22f 30%,
+      #c8a340 40%,
       transparent 80%
     ),
     radial-gradient(
       ellipse farthest-corner at left top,
-      #ffffff 0%,
-      #ffffac 8%,
-      #d1b464 25%,
-      #5d4a1f 62.5%,
-      #5d4a1f 100%
+      #f3f3f3 0%,
+      #f9f9f9 8%,
+      #ffd180 25%,
+      #8d7243 62.5%,
+      #8d7243 100%
     );
   color: #ead586; /* Yellow color for text */
   font-family: 'serif'; /* Old-fashioned font */
