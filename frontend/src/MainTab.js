@@ -5,6 +5,9 @@ import PersonAddIcon from '@mui/icons-material/PersonAdd'
 import HelpCenterIcon from '@mui/icons-material/HelpCenter'
 import PersonPinIcon from '@mui/icons-material/PersonPin'
 import './MainTab.css'
+import ImageSlider from './ImageSlider'
+import TimelineComponent from './TimelineComponent'
+import AboutUs from './AboutUs'
 
 const MainTab = () => {
     const [value, setValue] = useState(0)
@@ -16,16 +19,11 @@ const MainTab = () => {
 
     const handleShowContactForm = () => {
         setShowContactForm(true)
+        setValue(value)
     }
 
     const handleCloseContactForm = () => {
         setShowContactForm(false)
-    }
-
-    const handleShowFormForPartnership = () => {
-        // Show the contact form for Partnership & Collaboration
-        setValue(1) // Set the value to the index of the "Partnership & Collaboration" tab
-        setShowContactForm(true)
     }
 
     return (
@@ -36,9 +34,9 @@ const MainTab = () => {
                 aria-label="icon label tabs example"
                 className="custom-tabs-container"
             >
-                <Tab label="Home" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
-                <Tab label="About Us" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
-                <Tab label="Own A Franchaise" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
+                <Tab label="Home" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" onClick={() => handleChange(null, 0)} />
+                <Tab label="About Us" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" onClick={() => handleChange(null, 1)} />
+                <Tab label="Own A Franchaise" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" onClick={() => handleChange(null, 2)} />
                 <Tab label="Carreer" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
                 <Tab label="Locations" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
                 <Tab label="News" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
@@ -47,7 +45,7 @@ const MainTab = () => {
                     label="Contact Us"
                     className="custom-tab"
                     style={{ fontSize: '16px', fontWeight: 'bold' }}
-                    onClick={handleShowFormForPartnership} // Add onClick handler for this tab
+                    onClick={handleShowContactForm} // Add onClick handler for this tab
                 />         </Tabs>
 
 
@@ -57,6 +55,22 @@ const MainTab = () => {
                     <ContactForm onClose={handleCloseContactForm} />
                 </DialogContent>
             </Dialog>
+
+            {/* Conditionally render ImageSlider and TimelineComponent */}
+            {value === 0 /* "Home" tab */ && (
+                <div>
+                    <ImageSlider />
+                    <TimelineComponent />
+                </div>
+            )}
+
+            {value === 1 /* "About Us" tab */ && (
+                <div>
+                    <AboutUs />
+                </div>
+            )}
+
+
         </div>
     )
 }
