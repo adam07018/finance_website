@@ -5,13 +5,13 @@ import { SocialIcon } from 'react-social-icons'
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer" >
             <div className="footer-top">
                 <a href="/legal">Terms & Conditions</a> |
                 {/* <a href="/terms">Privacy Policy</a> |
                 <a href="/privacy">Fair Dealing Commitment</a> |
                 <a href="/cookies">Compliance with Tax Requirements</a> | */}
-                <SocialIcon url="https://www.facebook.com/downtownfnbgroup/" className="social-icon facebook" />
+                <SocialIcon url="https://www.facebook.com/downtownfnbgroup/" className="social-icon" />
                 <SocialIcon url="https://www.instagram.com/downtownfnbgroup/" className="social-icon instagram" />
                 <SocialIcon url="https://www.tiktok.com/@downtownfnbgroup" className="social-icon tiktok" />
                 <SocialIcon network='telegram' url="https://t.me/downtownfnbgroup" />

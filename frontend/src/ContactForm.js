@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Tabs, Tab, Button, Dialog, DialogContent, TextField, Box } from '@mui/material'
 import { IconButton } from '@mui/material'
-import SendIcon from '@mui/icons-material/Send'
+import sendCircle from '@iconify/icons-mdi/send-circle'
+
 import './css/ContactForm.css'
 
 import { Icon, InlineIcon } from '@iconify/react'
@@ -72,9 +73,10 @@ function ContactForm () {
 
     return (
         <div className='form-container'>
-            <h2 className="form-h2">Send us a message</h2>
+            {/* <h2 className="form-h2">Send us a message</h2> */}
             <form onSubmit={handleSubmit} className="form-wrapper">
                 <div className='leftcolumn'>
+                    <h2 className="form-h2">Send us a message</h2>
                     <TextField
                         label="Name"
                         variant="outlined"
@@ -84,7 +86,7 @@ function ContactForm () {
                         name="Name"
                         value={formData.Name}
                         onChange={handleChange}
-                        style={{ marginBottom: '20px' }}
+                        style={{ marginBottom: '20px', marginLeft: '10px' }}
                     />
 
                     <TextField
@@ -97,7 +99,7 @@ function ContactForm () {
                         type="email"
                         value={formData.Email}
                         onChange={handleChange}
-                        style={{ marginBottom: '20px' }}
+                        style={{ marginBottom: '20px', marginLeft: '10px' }}
                     />
 
                     <TextField
@@ -110,6 +112,7 @@ function ContactForm () {
                         type="tel"  // Set the type to "tel" for phone numbers
                         value={formData.Number}
                         onChange={handleChange}
+                        style={{ marginBottom: '20px', marginLeft: '10px' }}
                         InputProps={{
                             inputMode: 'numeric',
                             pattern: '[0-9]*', // Allow only numeric input
@@ -120,7 +123,7 @@ function ContactForm () {
 
                 <div className='middlecolumn'>
                     <TextField
-                        label="Message"
+                        label="Your Message"
                         variant="outlined"
                         fullWidth
                         multiline
@@ -130,14 +133,16 @@ function ContactForm () {
                         name="Message"
                         value={formData.Message}
                         onChange={handleChange}
-                        style={{ marginBottom: '50px' }}
+                        style={{ marginBottom: '50px', marginTop: "65px" }}
                     />
 
                     <Box display="flex" justifyContent="flex-end">
+                        <Icon className="form-submit" color="#2e933c" icon={sendCircle} onClick={handleSubmit} style={{ fontSize: '50px' }} />
 
-                        <IconButton type="submit" color="primary" >
+
+                        {/* <IconButton type="submit" color="primary"  >
                             <SendIcon />
-                        </IconButton>
+                        </IconButton> */}
 
                         {/* <Button type="submit" variant="contained" color="primary">
                             Submit

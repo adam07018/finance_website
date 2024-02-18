@@ -3,19 +3,35 @@ import React from 'react'
 import Map from './Map'
 import ContactForm from './ContactForm'
 
-import { Icon } from '@iconify/react'
-import sendCircle from '@iconify/icons-mdi/send-circle'
+import './css/ContactUs.css'
 
 const Intro = () => (
     <div className="intro-container">
         <h2 className="intro-h2">Our Mission</h2>
 
         <p className="intro-p">
-            Every single person who understands the impact of the web should be an
-            advocate and strive for a better, more inclusive web for all.
+            To enable aspiring entrepreneurs towards success in a dynamic food industry
+
         </p>
     </div>
 )
+
+const styles = {
+    container: {
+        position: 'relative',
+        minHeight: '400px', // Adding minHeight to ensure container has height
+    },
+    intro: {
+        zIndex: 1,
+    },
+    contactForm: {
+        position: 'absolute',
+        top: '20%', // Adjust this value to move the ContactForm up or down
+        left: '50%',
+        transform: 'translate(-50%, -50%)', // Centering horizontally and vertically
+        zIndex: 2,
+    },
+}
 
 
 const location = {
@@ -24,11 +40,13 @@ const location = {
     lng: 103.862991,
 }
 const ContactUs = () => (
-    <div className="ContactUs">
-        <Intro />
-        <ContactForm />
+    <div style={styles.container}>
+        <Intro style={styles.intro} />
+        <ContactForm style={styles.contactForm} />
+        <h4 style={{ textAlign: "center", color: "black", marginBottom: "20px" }}>COME VISIT OUR RESTARUANT</h4>
+
         <Map location={location} zoomLevel={17} />
-    </div>
+    </div >
 )
 
 export default ContactUs

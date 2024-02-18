@@ -3,7 +3,7 @@
   color: rgb(4, 205, 250);
   text-align: center;
   padding: 20px 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .footer.footer {
@@ -27,13 +27,13 @@
 .footer .footer-bottom {
   padding-top: 20px;
   font-weight: bold;
-  font-size: x-large;
+  font-size: 16px;
 }
 
 .social-icon {
   display: inline-block;
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   background-size: cover;
   margin: 0 5px;
 }
