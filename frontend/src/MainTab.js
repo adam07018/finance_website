@@ -36,11 +36,11 @@ const MainTab = () => {
             >
                 <Tab label="Home" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" onClick={() => handleChange(null, 0)} />
                 <Tab label="About Us" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" onClick={() => handleChange(null, 1)} />
-                <Tab label="Own A Franchaise" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" onClick={() => handleChange(null, 2)} />
-                <Tab label="Carreer" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
-                <Tab label="Locations" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
-                <Tab label="News" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
-                <Tab label="Q&A" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
+                <Tab label="Be Our Partner" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" onClick={() => handleChange(null, 2)} />
+                <Tab label="Directory" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
+                <Tab label="Media Centre" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
+                <Tab label="Contact Us" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
+                <Tab label="FAQ" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
                 <Tab
                     label="Contact Us"
                     className="custom-tab"

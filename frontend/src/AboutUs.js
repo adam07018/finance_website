@@ -9,7 +9,7 @@ function AboutUs () {
         <section id="about">
             <div className="about-1">
                 <h1 style={{ textAlign: "center", fontSize: "60px", fontWeight: "bold" }}>About Us</h1>
-                <p style={{ padding: "3px" }}>It all started with the love of food!<br /><br />
+                <p>It all started with the love of food!<br /><br />
 
                     In the year 1942, the founder of Downtown, a charismatic young man, was approached with an opportunity to learn the art of cooking prawn noodle soup. Without hesitation, he embraced the chance!<br /><br />
 

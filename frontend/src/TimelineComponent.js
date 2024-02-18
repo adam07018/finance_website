@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import './css/TimelineComponent.css'
 import timeline1 from './images/timeline1.jpeg'
 import timeline2 from './images/timeline2.jpeg'
+import timeline3 from './images/timeline3.jpeg'
+import timeline4 from './images/timeline4.jpeg'
+import timeline5 from './images/timeline5.jpeg'
 
 const TimelineComponent = () => {
     const [activeIndex, setActiveIndex] = useState(0)
@@ -14,8 +17,8 @@ const TimelineComponent = () => {
 
             document.querySelectorAll('.item').forEach((item, i) => {
                 const rect = item.getBoundingClientRect()
-                const min = rect.top + viewportHeight * 0.82
-                const max = rect.bottom + viewportHeight * 0.63
+                const min = rect.top + viewportHeight * 0.6
+                const max = rect.bottom + viewportHeight * 0.45
 
                 if (window.scrollY >= min && window.scrollY <= max) {
                     index = i
@@ -61,7 +64,7 @@ const TimelineComponent = () => {
                 <h3 className="subtitle">Join us today!</h3>
             </div>
             <div className="timeline">
-                <div class="item" data-text="001">
+                <div class="item" data-text="Own a franchaise">
                     <div class="content">
                         <img src={timeline1} alt="" class="img"></img>
                         <h2 class="content-title">Own a Franchise</h2>
@@ -85,7 +88,7 @@ const TimelineComponent = () => {
 
                 <div class="item" data-text="001">
                     <div class="content">
-                        <img src="./img/03.jpg" alt="" class="img"></img>
+                        <img src={timeline3} alt="" class="img"></img>
                         <h2 class="content-title">Peek inside our kitchen</h2>
                         <p class="content-desc">
                             如果你停止，就是谷底。如果你还在继续，
@@ -96,7 +99,7 @@ const TimelineComponent = () => {
 
                 <div class="item" data-text="001">
                     <div class="content">
-                        <img src="./img/04.jpg" alt="" class="img"></img>
+                        <img src={timeline4} alt="" class="img"></img>
                         <h2 class="content-title">Research & Development</h2>
                         <p class="content-desc">
                             如果你停止，就是谷底。如果你还在继续，
@@ -107,8 +110,8 @@ const TimelineComponent = () => {
 
                 <div class="item" data-text="001">
                     <div class="content">
-                        <img src="./img/01.jpeg" alt="" class="img"></img>
-                        <h2 class="content-title">Own a Franchise</h2>
+                        <img src={timeline5} alt="" class="img"></img>
+                        <h2 class="content-title">Successful Stories</h2>
                         <p class="content-desc">
                             如果你停止，就是谷底。如果你还在继续，
                             就是上坡，这是我听过关于人生低谷最好的阐述。

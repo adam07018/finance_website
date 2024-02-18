@@ -7,15 +7,16 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-top">
-                <a href="/legal">Legal</a> |
-                <a href="/terms">Terms & Conditions</a> |
-                <a href="/privacy">Privacy Policy</a> |
+                <a href="/legal">Terms & Conditions</a> |
+                {/* <a href="/terms">Privacy Policy</a> |
+                <a href="/privacy">Fair Dealing Commitment</a> |
+                <a href="/cookies">Compliance with Tax Requirements</a> | */}
                 <SocialIcon url="https://www.facebook.com/downtownfnbgroup/" className="social-icon facebook" />
                 <SocialIcon url="https://www.instagram.com/downtownfnbgroup/" className="social-icon instagram" />
                 <SocialIcon url="https://www.tiktok.com/@downtownfnbgroup" className="social-icon tiktok" />
                 <SocialIcon network='telegram' url="https://t.me/downtownfnbgroup" />
                 <SocialIcon url="https://www.youtube.com/channel/UCRENbo8rdOha44DpGirT_CA" className="social-icon youtube" />
-                {/* <a href="/linkedin" className="social-icon linkedin"></a> */}
+                <SocialIcon url="https://www.linkedin.com/company/downtownfnbgroup/" className="social-icon linkedin" />
             </div>
             <div className="footer-bottom">
                 <p>Copyright © 2024 Downtown F&B Group. All rights reserved.</p>
