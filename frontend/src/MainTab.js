@@ -8,6 +8,7 @@ import './MainTab.css'
 import ImageSlider from './ImageSlider'
 import TimelineComponent from './TimelineComponent'
 import AboutUs from './AboutUs'
+import ContactUs from './ContactUs'
 
 const MainTab = () => {
     const [value, setValue] = useState(0)
@@ -24,6 +25,26 @@ const MainTab = () => {
 
     const handleCloseContactForm = () => {
         setShowContactForm(false)
+    }
+
+
+    function AboutusNavbar () {
+        return (
+            <div className="navbar">
+                <a href="#home">Home</a>
+                <a href="#news">News</a>
+                <div className="dropdown">
+                    <button className="dropbtn">
+                        Dropdown <i className="fa fa-caret-down"></i>
+                    </button>
+                    <div className="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+        )
     }
 
     return (
@@ -67,6 +88,12 @@ const MainTab = () => {
             {value === 1 /* "About Us" tab */ && (
                 <div>
                     <AboutUs />
+                </div>
+            )}
+
+            {value == 5 /* "Contact Us" tab */ && (
+                <div>
+                    <ContactUs />
                 </div>
             )}
 
