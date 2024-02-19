@@ -5,7 +5,7 @@
   height: fit-content;
   /* display: flex;
   flex-direction: column; */
-  background: radial-gradient(
+  /* background: radial-gradient(
       ellipse farthest-corner at right bottom,
       #ffeb3b 0%,
       #ffe082 8%,
@@ -20,7 +20,8 @@
       #ffd180 25%,
       #8d7243 62.5%,
       #8d7243 100%
-    );
+    ); */
+  background-color: #fcefe0;
   color: #ead586; /* Yellow color for text */
   font-family: 'serif'; /* Old-fashioned font */
   z-index: -99;

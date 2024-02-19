@@ -52,6 +52,7 @@ const MainTab = () => {
             <Tabs
                 value={value}
                 onChange={handleChange}
+                style={{ marginTop: "-44px", }}
                 aria-label="icon label tabs example"
                 className="custom-tabs-container"
             >
@@ -59,16 +60,16 @@ const MainTab = () => {
                 <Tab label="About Us" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" onClick={() => handleChange(null, 1)} />
                 <Tab label="Be Our Partner" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" onClick={() => handleChange(null, 2)} />
                 <Tab label="Directory" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
-                <Tab label="Media Centre" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
+                <Tab label="Media Centre" style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: "19%" }} className="custom-tab-MediaCentre" />
                 <Tab label="Contact Us" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
                 <Tab label="FAQ" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
-                <Tab
+                {/* <Tab
                     label="Contact Us"
                     className="custom-tab"
                     style={{ fontSize: '16px', fontWeight: 'bold' }}
                     onClick={handleShowContactForm} // Add onClick handler for this tab
-                />         </Tabs>
-
+                />          */}
+            </Tabs>
 
             {/* Render ContactForm in a Dialog if showContactForm is true */}
             <Dialog open={showContactForm} onClose={handleCloseContactForm}>
