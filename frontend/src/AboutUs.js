@@ -11,13 +11,29 @@ function AboutUs () {
                 <h1 style={{ textAlign: "center", fontSize: "60px", fontWeight: "bold" }}>About Us</h1>
                 <p>It all started with the love of food!<br /><br />
 
-                    In the year 1942, the founder of Downtown, a charismatic young man, was approached with an opportunity to learn the art of cooking prawn noodle soup. Without hesitation, he embraced the chance!<br /><br />
+                    The fire hissed and cracked as the wood burned in an old brick stove, brewing a large soot covered pot as an old lady toiled in perspiration.  The morning was still in darkness as she filled 2 straw baskets with her fare and began her slow track from the beaten path of Potong Pasir to downtown.
+                    <br /><br />
 
-                    In just a month, he honed his skills under the guidance of his favorite uncle, who generously shared all his expertise in prawn noodle soup. The young man, already gifted in the culinary arts, quickly mastered the craft.<br /><br />
+                    It was 1953, just 7 years after the Japanese occupation of Singapore had ended but still fresh in the minds of the people as they struggled to recover.
+                    <br /><br />
 
-                    Soon, his prawn noodle soup stall, situated at Far East (where Dinbulah is now), became renowned for serving the most delicious prawn noodles. The stall drew crowds daily, with hundreds of people lining up to savor the famous dish. During the busiest lunch hours, the stall achieved a remarkable feat by serving up to 800 bowls!<br /><br />
+                    By the time she reached the wharves of the Singapore river to find her spot to peddle her prawn noodles, it was already bright and sunny. Coolies carrying gunny sacks of goods were unloading the Tongkangs as the opium dens fumed and children were plunging into the river to bathe and play.
+                    <br /><br />
 
-                    He came from a humble background. That’s why he knows what it takes to start a business.  He wants to assist aspiring entrepreneurs in achieving greatness too in this food industry.<br /><br />
+                    Life got better and by the time she was no longer able to bear the daily routine, she had many regular customers and was fondly referred to as the ‘Main road prawn noodles’ or Tua Lor Hei Mee in Hokien dialect, which the main thoroughfare above the steps from the river was called.
+                    <br /><br />
+
+                    The recipe was subsequently handed down to her son in law who sold the same prawn noodles in the  now demolished Jalan Bahagia Market for another 20 odd years.
+                    <br /><br />
+
+                    This recipe was then handed over to his nephew in 2002, who set up Talu Prawn Noodles in a small shop in Telok Kurau for 2 years and later relocated to Far East Square in Pekin Street for another 5 years, before it was sold to one of the sibling of Hougang Porridge.
+                    <br /><br />
+
+                    By that time, each lunch saw servings of more than 800 bowls a day and a survey recorded more than 300,000 regulars in the CBD Downtown area alone.
+                    <br /><br />
+
+                    Now after nearly 2 decades, this recipe is being resurrected by the family for the new food & beverage group, DOWNTOWN.
+                    <br /><br />
                 </p>
             </div>
             <div className="about-2">

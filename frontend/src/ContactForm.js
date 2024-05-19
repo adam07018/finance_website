@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import { Tabs, Tab, Button, Dialog, DialogContent, TextField, Box } from '@mui/material'
 import { IconButton } from '@mui/material'
-import sendCircle from '@iconify/icons-mdi/send-circle'
-
+import SendIcon from '@mui/icons-material/Send'
 import './css/ContactForm.css'
 
 import { Icon, InlineIcon } from '@iconify/react'
@@ -54,8 +53,8 @@ function ContactForm () {
             value: '7500A Beach Road #05-319 The Plaza Singapore 199591',
             icon: locationIcon,
         },
-        { value: '+1 234 567 8900', icon: phoneIcon },
-        { value: 'support@example.com', icon: emailIcon },
+        { value: '+65 8198 7488', icon: phoneIcon },
+        { value: 'ask@downtownfnb.com', icon: emailIcon },
     ]
 
     const renderContactDetails = () =>
@@ -73,7 +72,6 @@ function ContactForm () {
 
     return (
         <div className='form-container'>
-            {/* <h2 className="form-h2">Send us a message</h2> */}
             <form onSubmit={handleSubmit} className="form-wrapper">
                 <div className='leftcolumn'>
                     <h2 className="form-h2">Send us a message</h2>
@@ -137,16 +135,11 @@ function ContactForm () {
                     />
 
                     <Box display="flex" justifyContent="flex-end">
-                        <Icon className="form-submit" color="#2e933c" icon={sendCircle} onClick={handleSubmit} style={{ fontSize: '50px' }} />
+                        {/* <Icon className="form-submit" icon={sendCircle} onClick={handleSubmit} /> */}
+                        <Button className="form-submit" sx={{ backgroundColor: '#ff914d', color: '#ffffff' }} variant="contained" endIcon={<SendIcon />} onClick={handleSubmit} >
+                            Send
+                        </Button>
 
-
-                        {/* <IconButton type="submit" color="primary"  >
-                            <SendIcon />
-                        </IconButton> */}
-
-                        {/* <Button type="submit" variant="contained" color="primary">
-                            Submit
-                        </Button> */}
                     </Box>
                 </div>
 
@@ -157,7 +150,6 @@ function ContactForm () {
 
                         <div className="info-details-container">{renderContactDetails()}</div>
 
-                        {/* <div className="info-icons-container">{renderIcons()}</div> */}
                     </section>
                 </div>
             </form>

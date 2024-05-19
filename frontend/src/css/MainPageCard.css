@@ -1,0 +1,43 @@
+.col-md-8 {
+  background-color: #fcf0df;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.col-md-4 {
+  background-color: #fcf0df;
+}
+
+.card {
+  border: none;
+}
+
+h5,
+.h5 {
+  font-size: 3vw;
+  font-family: system-ui;
+}
+
+.card-title {
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  font-size: 2.5vw;
+}
+
+.card-text:last-child {
+  font-size: large;
+}
+
+.full-width-image {
+  width: 100%;
+  height: 100%; /* Maintain aspect ratio */
+}
+
+element.style {
+  text-align: center;
+  margin: 3vh;
+  font-size: 12vh;
+  color: black;
+  font-family: monospace;
+  font-weight: 700;
+}

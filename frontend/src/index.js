@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <div className='background'>
     <div className="app-container">
-      <img src={logo} alt='logo' style={{ width: "1200px", height: "auto" }}/*style={{ width: "20%", height: "auto" }}*/ />
+      <img src={logo} alt='logo' style={{ width: "75rem", height: "auto", marginBottom: "0vh" }}/*style={{ width: "20%", height: "auto" }}*/ />
       <MainTab />
       <Footer />
     </div>

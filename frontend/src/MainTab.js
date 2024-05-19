@@ -6,9 +6,12 @@ import HelpCenterIcon from '@mui/icons-material/HelpCenter'
 import PersonPinIcon from '@mui/icons-material/PersonPin'
 import './MainTab.css'
 import ImageSlider from './ImageSlider'
-import TimelineComponent from './TimelineComponent'
 import AboutUs from './AboutUs'
+import Directory from './Directory'
 import ContactUs from './ContactUs'
+import FAQ from './FAQ'
+import MainPageCard from './MainPageCard'
+import CommingSoon from './images/comingsoon.jpeg'
 
 const MainTab = () => {
     const [value, setValue] = useState(0)
@@ -48,27 +51,20 @@ const MainTab = () => {
     }
 
     return (
-        <div>
+        <div >
             <Tabs
                 value={value}
                 onChange={handleChange}
-                style={{ marginTop: "-44px", }}
+                style={{ backgroundColor: "#362114" }}
                 aria-label="icon label tabs example"
-                className="custom-tabs-container"
             >
-                <Tab label="Home" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" onClick={() => handleChange(null, 0)} />
-                <Tab label="About Us" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" onClick={() => handleChange(null, 1)} />
-                <Tab label="Be Our Partner" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" onClick={() => handleChange(null, 2)} />
-                <Tab label="Directory" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
-                <Tab label="Media Centre" style={{ fontSize: '16px', fontWeight: 'bold', marginLeft: "19%" }} className="custom-tab-MediaCentre" />
-                <Tab label="Contact Us" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
-                <Tab label="FAQ" style={{ fontSize: '16px', fontWeight: 'bold' }} className="custom-tab" />
-                {/* <Tab
-                    label="Contact Us"
-                    className="custom-tab"
-                    style={{ fontSize: '16px', fontWeight: 'bold' }}
-                    onClick={handleShowContactForm} // Add onClick handler for this tab
-                />          */}
+                <Tab label="Home" style={{ fontWeight: 'bold', color: "white" }} className="custom-tab" onClick={() => handleChange(null, 0)} />
+                <Tab label="About Us" style={{ fontWeight: 'bold', color: "white" }} className="custom-tab" onClick={() => handleChange(null, 1)} />
+                <Tab label="Be Our Partner" style={{ fontWeight: 'bold', color: "white" }} className="custom-tab" onClick={() => handleChange(null, 2)} />
+                <Tab label="Directory" style={{ fontWeight: 'bold', color: "white" }} className="custom-tab" />
+                <Tab label="Media Centre" style={{ fontWeight: 'bold', color: "white" }} className="custom-tab" onClick={() => handleChange(null, 4)} />
+                <Tab label="Contact Us" style={{ fontWeight: 'bold', color: "white" }} className="custom-tab" />
+                <Tab label="FAQ" style={{ fontWeight: 'bold', color: "white" }} className="custom-tab" />
             </Tabs>
 
             {/* Render ContactForm in a Dialog if showContactForm is true */}
@@ -80,24 +76,42 @@ const MainTab = () => {
 
             {/* Conditionally render ImageSlider and TimelineComponent */}
             {value === 0 /* "Home" tab */ && (
-                <div>
+                <div >
                     <ImageSlider />
-                    <TimelineComponent />
+                    <h2 style={{ textAlign: 'center', margin: '3vh', fontSize: '4rem', color: 'black', fontFamily: 'Canvas Sans', fontWeight: '700' }}>Join us today</h2>
+                    <MainPageCard />
                 </div>
             )}
 
             {value === 1 /* "About Us" tab */ && (
-                <div>
+                <div >
                     <AboutUs />
                 </div>
             )}
 
-            {value == 5 /* "Contact Us" tab */ && (
-                <div>
+            {value === 3 /* "Directory" tab */ && (
+                <div >
+                    <Directory />
+                </div>
+            )}
+
+            {value === 4 /* "MediaCenter" tab */ && (
+                <div >
+                    <img src={CommingSoon} style={{ maxWidth: '100%', maxHeight: '100%' }} />
+                </div>
+            )}
+
+            {value === 5 /* "Contact Us" tab */ && (
+                <div >
                     <ContactUs />
                 </div>
             )}
 
+            {value === 6 /* "FAQ" tab */ && (
+                <div >
+                    <FAQ />
+                </div>
+            )}
 
         </div>
     )

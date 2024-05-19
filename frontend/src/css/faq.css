@@ -1,0 +1,31 @@
+/* faq.css */
+.faq-accordion {
+  --bs-accordion-btn-bg: #29c7d5; /* Set the accordion button background color */
+}
+
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+  font-size: 1.5rem;
+  font-family: 'Red Hat Display', sans-serif;
+  text-align: left;
+  background-color: #c3996b;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #d6c6b1;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0
+    var(--bs-accordion-border-color);
+}
+
+.accordion-item {
+  background-color: #e4dacd;
+  margin-bottom: 1.5vh;
+}

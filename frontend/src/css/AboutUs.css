@@ -10,7 +10,7 @@ body {
 .about-1 {
   /* margin: 30px; */
   /* padding: 5px; */
-  background-image: url(../images/AboutUsBg.jpeg);
+  background-color: #fcf0df;
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -6,32 +6,33 @@ import ContactForm from './ContactForm'
 import './css/ContactUs.css'
 
 const Intro = () => (
-    <div className="intro-container">
-        <h2 className="intro-h2">Our Mission</h2>
+    <div className="intro-container" >
+        <div className='word-container'>
+            <h2 className="intro-h2">Our Mission</h2>
 
-        <p className="intro-p">
-            To enable aspiring entrepreneurs towards success in a dynamic food industry
-
-        </p>
+            <p className="intro-p">
+                To enable aspiring entrepreneurs towards success in a dynamic food industry
+            </p>
+        </div>
     </div>
 )
 
-const styles = {
-    container: {
-        position: 'relative',
-        minHeight: '400px', // Adding minHeight to ensure container has height
-    },
-    intro: {
-        zIndex: 1,
-    },
-    contactForm: {
-        position: 'absolute',
-        top: '20%', // Adjust this value to move the ContactForm up or down
-        left: '50%',
-        transform: 'translate(-50%, -50%)', // Centering horizontally and vertically
-        zIndex: 2,
-    },
-}
+// const styles = {
+//     container: {
+//         position: 'relative',
+//         minHeight: '400px', // Adding minHeight to ensure container has height
+//     },
+//     intro: {
+//         zIndex: 1,
+//     },
+//     contactForm: {
+//         position: 'absolute',
+//         top: '20%', // Adjust this value to move the ContactForm up or down
+//         left: '50%',
+//         transform: 'translate(-50%, -50%)', // Centering horizontally and vertically
+//         zIndex: 2,
+//     },
+// }
 
 
 const location = {
@@ -40,10 +41,10 @@ const location = {
     lng: 103.862991,
 }
 const ContactUs = () => (
-    <div style={styles.container}>
-        <Intro style={styles.intro} />
-        <ContactForm style={styles.contactForm} />
-        <h4 style={{ textAlign: "center", color: "black", marginBottom: "20px" }}>COME VISIT OUR RESTARUANT</h4>
+    <div>
+        <Intro />
+        <ContactForm />
+        <h4 style={{ textAlign: "center", color: "black", marginBottom: "20px", fontStyle: "italic", fontSize: "30px" }}>JOIN US TODAY!</h4>
 
         <Map location={location} zoomLevel={17} />
     </div >

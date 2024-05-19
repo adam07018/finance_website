@@ -1,6 +1,6 @@
 .app-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   height: fit-content;
   /* display: flex;
@@ -28,7 +28,7 @@
 }
 
 .background {
-  background-color: #000000;
+  background-color: #362114;
 }
 
 .logo-container {
