@@ -94,6 +94,12 @@ const MainTab = () => {
                 </div>
             )}
 
+            {value === 2 /* "Be Our Partner" tab */ && (
+                <div >
+                    <img src={CommingSoon} style={{ maxWidth: '100%', maxHeight: '100%' }} />
+                </div>
+            )}
+
             {value === 3 /* "Directory" tab */ && (
                 <div >
                     <Directory />
