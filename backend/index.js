@@ -8,8 +8,10 @@ const cors = require('cors')
 const app = express()
 const PORT = 8000
 
+// Todo: Add CORS middleware, 
+// https://www.youtube.com/watch?v=Cfi0mymfKiA
+// 2:07
 app.use(cors())
-
 
 mongoose.connect(process.env.DATABASE_URL)
 
