@@ -12,6 +12,7 @@ import ContactUs from './ContactUs'
 import FAQ from './FAQ'
 import MainPageCard from './MainPageCard'
 import CommingSoon from './images/comingsoon.jpeg'
+import AboutUsBg from './images/AboutUs.jpeg'
 
 const MainTab = () => {
     const [value, setValue] = useState(0)
@@ -85,7 +86,10 @@ const MainTab = () => {
 
             {value === 1 /* "About Us" tab */ && (
                 <div >
-                    <AboutUs />
+                    {/* <AboutUs /> */}
+                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '60rem' }}>
+                        <img src={AboutUsBg} alt="About Us" style={{ width: '60rem', height: '60rem' }} />
+                    </div>
                 </div>
             )}
 
