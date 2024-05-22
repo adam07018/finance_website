@@ -13,6 +13,7 @@ import FAQ from './FAQ'
 import MainPageCard from './MainPageCard'
 import CommingSoon from './images/comingsoon.jpeg'
 import AboutUsBg from './images/AboutUs.jpeg'
+import HomePage from './images/HomePage.jpeg'
 
 const MainTab = () => {
     const [value, setValue] = useState(0)
@@ -78,7 +79,7 @@ const MainTab = () => {
             {/* Conditionally render ImageSlider and TimelineComponent */}
             {value === 0 /* "Home" tab */ && (
                 <div >
-                    <ImageSlider />
+                    <img src={HomePage} style={{ width: '100%', height: '40rem' }} />
                     <h2 style={{ textAlign: 'center', margin: '3vh', fontSize: '4rem', color: 'black', fontFamily: 'Canvas Sans', fontWeight: '700' }}>Join us today</h2>
                     <MainPageCard />
                 </div>
