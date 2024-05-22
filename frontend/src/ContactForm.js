@@ -40,6 +40,7 @@ function ContactForm () {
                 alert('User data submitted successfully')
             } else {
                 console.error('Failed to submit user data:', response.statusText)
+                console.log(response)
                 alert('Failed to submit user data. Please try again.')
             }
         } catch (error) {
