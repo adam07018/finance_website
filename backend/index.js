@@ -8,12 +8,9 @@ const cors = require('cors')
 const app = express()
 const PORT = 8000
 
-// Todo: Add CORS middleware, 
-// https://www.youtube.com/watch?v=Cfi0mymfKiA
-// 2:07
 app.use(cors(
     {
-        origin: 'https://www.downtownfnb.com/',
+        origin: 'https://www.downtownfnb.com',
         methods: 'GET, POST',
         credentials: true
     }
