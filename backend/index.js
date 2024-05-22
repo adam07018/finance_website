@@ -37,6 +37,11 @@ const User = mongoose.model('User', userSchema, 'info')
 // Middleware to parse JSON bodies
 app.use(bodyParser.json())
 
+// Get to show message for success connection
+app.get('/', (req, res) => {
+    res.json('Hello world!')
+})
+
 // Endpoint to save user information
 app.post('/api/users', async (req, res) => {
     try {
